@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: azure-vote-back
-  namespace: ryan
+  namespace: ryan-prod
 spec:
   replicas: 1
   selector:
@@ -29,7 +29,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: azure-vote-back
-  namespace: ryan
+  namespace: ryan-prod
 spec:
   ports:
   - port: 6379
@@ -40,7 +40,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: azure-vote-front
-  namespace: ryan
+  namespace: ryan-prod
 spec:
   replicas: 1
   selector:
@@ -78,7 +78,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: azure-vote-front
-  namespace: ryan
+  namespace: ryan-prod
 spec:
   type: LoadBalancer
   ports:
