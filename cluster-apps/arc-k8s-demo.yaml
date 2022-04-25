@@ -69,7 +69,7 @@ spec:
         - name: REDIS
           value: "azure-vote-back"
         - name: MESSAGE
-          value: This is an Azure Arc GitOps Demo!
+          value: This is an Azure Arc GitOps Demo!!!!
 ---
 apiVersion: v1
 kind: Service
